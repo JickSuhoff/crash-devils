@@ -25,9 +25,9 @@ export default function Technology() {
             title="Frontend"
             // description="Text text text text"
             tags={[
-              ["React", "Next.js", "TypeScript", "JavaScript", "Redux"],
-              ["Redux Toolkit", "MobX", "HTML5", "CSS3", "SCSS"],
-              ["SASS", "LESS", "Material UI", "Bootstrap", "i18n"],
+              ["React", "Next.js", "TypeScript", "JavaScript", "Redux Toolkit"],
+              ["Zustand", "React Query", "HTML5", "CSS3", "Tailwind CSS"],
+              ["SCSS", "Material UI", "Vite", "Jest", "React Testing Library"],
             ]}
           />
           <Card
@@ -35,14 +35,22 @@ export default function Technology() {
             number="/ 02"
             title="Backend"
             // description="Text text text text"
-            tags={[["Python", "Django", "REST APIs", "GraphQL"]]}
+            tags={[
+              ["Python", "Node.js", "Express.js", "Django", "FastAPI"],
+              ["NestJS", "PostgreSQL", "MongoDB", "Redis", "REST APIs"],
+              ["GraphQL", "Docker", "Kubernetes", "AWS", "CI/CD"],
+            ]}
           />
           <Card
             variant={3}
             number="/ 03"
             title="Mobile"
             // description="Text text text text"
-            tags={[["React Native", "Ionic"]]}
+            tags={[
+              ["React Native", "Expo", "Swift", "SwiftUI", "Kotlin"],
+              ["Jetpack Compose", "Ionic", "Firebase", "Push Notifications", "AsyncStorage"],
+              ["SQLite", "REST APIs", "GraphQL", "Deep Linking", "Geolocation"],
+            ]}
           />
           <p className="max-w-[632px] font-[family-name:var(--font-geist)] text-[32px] max-[1200px]:text-[20px] max-[1200px]:max-w-full font-normal text-[rgba(248,239,239,1)]">
             Our technology choices allow us to deliver high-performance
