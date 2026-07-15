@@ -48,8 +48,8 @@ export default function Technology() {
             // description="Text text text text"
             tags={[
               ["React Native", "Expo", "Swift", "SwiftUI", "Kotlin"],
-              ["Jetpack Compose", "Ionic", "Firebase", "Push Notifications", "AsyncStorage"],
-              ["SQLite", "REST APIs", "GraphQL", "Deep Linking", "Geolocation"],
+              ["Firebase", "Push Notifications", "AsyncStorage"],
+              ["SQLite", "REST APIs", "GraphQL", "Deep Linking"],
             ]}
           />
           <p className="max-w-[632px] font-[family-name:var(--font-geist)] text-[32px] max-[1200px]:text-[20px] max-[1200px]:max-w-full font-normal text-[rgba(248,239,239,1)]">

@@ -24,12 +24,12 @@ export default function Card({ variant = 1, number, title, description, tags = [
         {tags.map((row, i) => (
           <div
             key={i}
-            className="flex justify-between max-[1200px]:justify-start max-[1200px]:gap-3 uppercase"
+            className="flex flex-wrap justify-between gap-x-3 gap-y-1 max-[1200px]:justify-start uppercase"
           >
             {row.map((tag) => (
               <span
                 key={tag}
-                className="font-[family-name:var(--font-geist-mono)] text-[12px] font-normal text-[rgba(168,168,168,1)]"
+                className="whitespace-nowrap font-[family-name:var(--font-geist-mono)] text-[12px] font-normal text-[rgba(168,168,168,1)]"
               >
                 {tag}
               </span>

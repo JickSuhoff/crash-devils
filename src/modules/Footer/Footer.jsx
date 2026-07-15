@@ -149,8 +149,8 @@ export default function Footer() {
                   // { label: "Projects", id: "cases" },
                   // { label: "Blog", id: "blog" },
                   { label: "Contact", id: "contact" },
-                  { label: "Privacy Policy", id: null },
-                  { label: "Terms and Condition", id: null },
+                  // { label: "Privacy Policy", id: null },
+                  // { label: "Terms and Condition", id: null },
                 ].map(({ label, id }) => (
                   <a
                     key={label}
