@@ -1,66 +1,28 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Header from "@/modules/Header";
+import Hero from "@/modules/Hero";
+import About from "@/modules/About";
+import Technology from "@/modules/Technology";
+import Feature from "@/modules/Feature";
+//import Cases from "@/modules/Cases";
+//import Blog from "@/modules/Blog";
+import Footer from "@/modules/Footer";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.js file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+    <main className="flex flex-col gap-9">
+      <div className="flex flex-col gap-9 min-[1200px]:bg-[radial-gradient(circle_at_50%_27%,#e6936b_0%_-1%,#bc4a13_16%_15%,#010004_40%_69%)] max-[1200px]:bg-[radial-gradient(circle_at_50%_27%,#bc4a13_0%_1%,#010004_35%_66%)]">
+        <Header />
+        <Hero />
+        <About />
+      </div>
+      <Technology />
+      <Feature />
+      {/* <Cases /> */}
+
+      <div className="flex flex-col gap-9 min-[1200px]:bg-[radial-gradient(circle_at_50%_54%,#e5b69d_2%_3%,#010004_53%_65%)] max-[1200px]:bg-[radial-gradient(circle_at_50%_43%,#e5b69d_2%_3%,#010004_53%_65%)] max-[800px]:bg-[radial-gradient(circle_at_50%_43%,#e5b69d_1%_-1%,#010004_33%_59%)]">
+        {/* <Blog /> */}
+        <Footer />
+      </div>
+    </main>
   );
 }
